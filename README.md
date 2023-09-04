@@ -1,2 +1,9 @@
 # SCAPE-microscope-with-customized-zoom-lens
 Detailed guideline containing both hardware and software to build up a customized SCAPE microscope with zoom lens
+
+SCAPE microscope:
+SCAPE microscope is a special type of light-sheet microscope. It is a variation of OPM and can be further dated back to remote-refocusing microscopy. It's primary advantage is to utilize one single objective lens to perform both illumination and image collections. Thus, it is very user-friendly and can accommondate most biological samples. It is also very friendly to live samples as it results in very little photo toxicity and does not require stage movement.
+One of the major limitation for SCAPE microscope is that it is subjected to extremely strict 4F alignment (the same for all remote-refocusing system) and objectives used in the system cannot be changed during operation. This leads to one single fixed magnification during operation and can only accommondate one single immersion medium. The first one is partially solved in SCAPE 2.0 design where a commercial zoom lens was introduced as the camera lens. But the latter one was never been resolved. Considering the more and more wide use of tissue clearing medium, It is obviously very concerning drawback. As a result, this work combined SCAPE microscope with the any-immersion-remote-refocuse-microscopy designed by Alfred Millett-Sikking
+
+Zoom lens:
+The zoom lens in this work refers to the customized one designed by Alfred Millett-Sikking in his Any Immersion Remote Refocuse Microscopy (https://github.com/amsikking/any_immersion_remote_refocus_microscopy). This zoom lens is designed to have a dynamic focal length (132.5mm-150mm) with a static front/back focal plane. This way, the magnification at the remote-refocusing point can be adjusted to match the refractive index of the immersion medium while complying the strict 4F alignment.
