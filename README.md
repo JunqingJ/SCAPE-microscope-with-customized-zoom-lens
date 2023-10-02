@@ -3,4 +3,6 @@ Detailed guideline containing both hardware and software to reproduce the micros
 
 ![image](https://github.com/JunqingJ/SCAPE-microscope-with-customized-zoom-lens/assets/78386273/cd6b4d51-95ac-4e9c-8654-e301d94f49fa)
 
+
+
 This project intends to offer those very beginner who barely had any optics background a not-so-intimidating starting point. Contents in this repository are mostly practical/hands-on oriented and keywords of theoretical concepts are provided.
