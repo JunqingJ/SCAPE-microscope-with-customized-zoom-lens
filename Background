@@ -1,0 +1,14 @@
+SCAPE microscope:
+It's a variation of single-objective-light-sheet microscope originated from OPM (oblique plane microscope)
+It uses one single objective for both illumination and image collection which makes mounting much easier compared to traditional light sheet microscope
+This setup is esspecially useful in large scale tissue imaging or live imaging
+One of the major limitation of SCAPE setup is that it can only image samples in one single immersion medium. It significantly limits applications for tissue-cleared samples which is becoming more and more popular
+Combining the SCAPE microscope with the customized zoom lens desgiend by Alfred Millett-Sikking in his Any Immersion Remote Refocuse Microscopy (https://github.com/amsikking/any_immersion_remote_refocus_microscopy), this microscope should be capable of operating in 
+any commonly used immersion medium
+For beginners of optics and microscopy, following concepts/designs would be essential for understanding this microscope: remote-refocusing microscope, OPM, SCAPE 2.0, 4f alignment/4f operator (and its difference between 'infinity space'). Fourier optics would be extremely
+valuable to understand but it can be quite intimidating at the beginning 
+
+Customized zoom lens:
+The reason why a customized zoom lens has to be used instead of a commercial zoom lens is solely due to the 4f alignment constraint. Alfred's zoom lens has a dynamic effective focal distance ranging from 132.5-150mm while the front/back focal plane is kept static
+Details of zoom lens design and modeling can be found in Alfred's repository for those interested.
+The alignment procedure of zoom lens in this project is modified and hopefully made it easier to adapt in a exisiting system
