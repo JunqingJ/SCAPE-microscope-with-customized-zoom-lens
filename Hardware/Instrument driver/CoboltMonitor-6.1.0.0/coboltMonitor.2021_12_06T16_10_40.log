@@ -1,0 +1,8 @@
+2021-12-06T16:10:40 ***** TRACE STARTED *****
+2021-12-06T16:10:40 System.IO.IOException: Incorrect function.
+
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream.DiscardInBuffer()
+   at System.IO.Ports.SerialStream.Dispose(Boolean disposing)
+   at System.IO.Ports.SerialStream.Finalize()
+2021-12-06T16:10:40 ***** TRACE ENDED *****
