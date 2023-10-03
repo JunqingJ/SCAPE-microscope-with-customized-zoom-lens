@@ -1,1 +1,7 @@
-This folder contains MATLAB code for 3D acquisition, python code to control zoom lens (written by Alfred for his any immersion remote refocus microscopy) and a checklist of all other commercial software need to be downloaded
+MATLAB:
+- Set_voltage: control galvo mirror, for alignment and testing
+- Sinusoidal_input: sinusoidal signal for galvo mirror, for alignment and testing
+- Acquisition: automated 3D acquisition. See comments on how to use it properly. For real operation
+
+Python:
+- See comments in code on how to use it properly. Code written by Alfred for his Any immersion remote refocusing microscopy (https://github.com/amsikking/any_immersion_remote_refocus_microscopy)
