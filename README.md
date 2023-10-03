@@ -6,3 +6,5 @@ Detailed guideline containing both hardware and software to reproduce the micros
 
 
 This project intends to offer those very beginner who barely had any optics background a not-so-intimidating starting point. Contents in this repository are mostly practical/hands-on oriented and keywords of theoretical concepts are provided.
+
+Contact: chris.moraes@mcgill.ca or junqing.jiang@mail.mcgill.ca
