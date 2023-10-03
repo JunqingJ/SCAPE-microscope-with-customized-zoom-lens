@@ -2,7 +2,7 @@
 exposure=100;%in ms
 scanstep=2;%in um
 scanrange=250;%in um (maximum is 350-400)
-FolderName='TW1_Ecad\';
+FolderName='FILENAME\'; % The back slash needs to be here
 
 %% Parameter settings (Do not change)
 centerV=-0.02;%in V, do not change unless microscope is re-calibrated
@@ -13,10 +13,6 @@ V_step=scanstep*conversion;%Voltage increment needed for each step
 StartPoint=centerV+Offset;
 EndPoint=StartPoint-scanrange*conversion;
 OutputSignal=StartPoint+2*V_step:-V_step:EndPoint-2*V_step;
-%  STEP=0.0004*2;
-%  StartPoint=-1.35;
-%  EndPoint=-0.65;
-%  OutputSignal=StartPoint:STEP:EndPoint;
 fprintf('Total number of images: %d\n',length(OutputSignal));
 mkdir(FolderName);
 
@@ -26,12 +22,11 @@ d = daqlist("ni");
 deviceInfo = d{1, "DeviceInfo"};
 dq = daq("ni");
 dq.Rate = 3000;
-addoutput(dq, "Dev2", "ao0", "Voltage");
+addoutput(dq, "DEVICE NAME", "CONNECTION PORT", "Voltage"); %change the device name to match the one in the system
 write(dq,StartPoint);
 
 %% Automated scanning
-addpath('C:\Program Files\MATLAB\R2021a\toolbox\AndorSDK3')
-disp('Andor SDK3 Kinetic Series Example');
+addpath('PATH TO ANDORSDK3') %change it to the path to AndorSDK3 for MATLAB
 [rc] = AT_InitialiseLibrary();
 AT_CheckError(rc);
 [rc,hndl] = AT_Open(0);
@@ -94,7 +89,7 @@ while(i<frameCount)
     
     thisFilename = strcat(filename, num2str(i+1), '.tiff');
     disp(['Writing Image ', num2str(i+1), '/',num2str(frameCount),' to disk']);
-    imwrite(buf2,"C:\Users\MoraesLab\OneDrive\Documents\MATLAB\"+FolderName+thisFilename) %saves to desinated directory
+    imwrite(buf2,"YOUR PATHWAY"+FolderName+thisFilename) %change to match the pathway for images to be saved
 
     i = i+1;
 end
