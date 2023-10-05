@@ -1,6 +1,11 @@
-The workflow of this microscope is absolutely not optimized as it is mainly based on commercial software from individual hardware supplier
-The sole reason why MicroManager was not used for integrated control is because it lacks ability to send out fast analogue signal required by galvo mirror
-MicroManager plugin for analogue signal exists but was designed for OpenSIM and can be tricky to adapt into this system
-It is highly suggested to explore the option of integrated control through PycroManager (which can also be benefited from using napari)
-Alternatively, pure home written integrated control code (and GUI) can be considered. see reference at Alfred's SOLS microscope (https://github.com/amsikking/SOLS_microscope)
-For image post-processing, no completed workflow has been established yet. But one can refer to Alfred's post-processing code for SOLS microscope (https://github.com/amsikking/SOLS_microscope_data_processing) as a starting point
+-The workflow of this microscope is absolutely not optimized as it is mainly based on commercial software from individual hardware supplier
+
+-The sole reason why MicroManager was not used for integrated control is because it lacks ability to send out fast analogue signal required by galvo mirror
+
+-MicroManager plugin for analogue signal exists but was designed for OpenSIM and can be tricky to adapt into this system
+
+-It is highly suggested to explore the option of integrated control through PycroManager (which can also be benefited from using napari)
+
+-Alternatively, pure home written integrated control code (and GUI) can be considered. see reference at Alfred's SOLS microscope (https://github.com/amsikking/SOLS_microscope)
+
+-For image post-processing, no completed workflow has been established yet. But one can refer to Alfred's post-processing code for SOLS microscope (https://github.com/amsikking/SOLS_microscope_data_processing) as a starting point
